@@ -1,6 +1,3 @@
-//
-// Created by kikog on 11/24/2024.
-//
 
 #include <windows.h>
 #include <tlhelp32.h>
@@ -37,5 +34,6 @@ void ProcessID() {
 
 int main() {
     ProcessID();
+    system("pause");
     return 0;
 }
