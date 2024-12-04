@@ -11,30 +11,33 @@ bool canQueensAttack (int row1, int col1, int row2, int col2)
 // printing the board.
 void printBoard(int row1, int col1, int row2, int col2)
 {
-    printf("  a b c d e f g h\n");
+    printf("  A   B   C   D   E   F   G   H\n");
     for (int row = 8; row >=1; row--)
     {
         printf("%d ",row);
         for (int col = 1; col <=8; col++)
         {
-            if (row == row1 && col == col1) {
-                printf("W ");
+            if (row == row1 && col == col1) 
+            {
+                printf(" W  ");
             }
-            else if (row == row2 && col == col2) {
-                printf("B ");
+            else if (row == row2 && col == col2) 
+            {
+                printf(" B  ");
             }
             else
             {
-                printf("_ ");
+                printf("|_| ");
             }
         }
         printf("%d\n", row);
     }
-    printf("  a b c d e f g h\n");
+    printf("   A   B   C   D   E   F   G   H\n");
 
 }
 
-int main() {
+int main() 
+{
     int row1, col1, row2, col2;
     printf("Enter white queen's position (row/collum): ");
     scanf("%d %d", &row1, &col1);
@@ -60,5 +63,3 @@ int main() {
     printf("Queens can't attack eachother\n");
     }
 }
-
-
